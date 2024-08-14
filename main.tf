@@ -73,13 +73,16 @@ module "alb" {
     }
     ]
 
-  http_tcp_listeners = [
-  {
-    protocol         = "HTTP"
-    port             = 80
-    target_groups_index = 0
+
+
+  listeners = {
+
+    ex-http = {
+      port            = 80
+      protocol        = "HTTP"
+    }
   }
-  ]
+
 
   tags = {
     Environment = "Dev"
