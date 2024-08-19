@@ -40,6 +40,6 @@ variable "asg_min_size" {
 
 variable "asg_max_size" {
   description = "Max number of instances in ASG"
-  default     = 2
+  default     = 1
 }
 
